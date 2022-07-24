@@ -1,0 +1,14 @@
+
+.title{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: rgb(24, 23, 23);
+  background-color: hsla(271, 100%, 70%, 0.507);
+}
+
+.meubotao{
+  border-radius: 7px;
+  width: 100px;
+  font-size: 30px;
+  background-color:rgb(141, 141, 21);
+}

@@ -1,0 +1,49 @@
+
+import './App.css';
+import ErrorExample from './1-useState/1-error-example'
+import Jxboladao from './components/01jsx';
+import FalaProps from './components/03Props';
+import CssMaroto from './components/04css';
+import PropsDinamicos from './components/05PropsDinamicos';
+import Evento from './components/06Evento';
+import Form from './components/07.useState';
+import EventosProps from './components/08.eventosProps';
+import Condicionais from './components/10.Condicionais';
+import MeusItens from './components/11.RenderizacaoListas';
+import StateLift from './components/12.StateLift';
+import { useState } from 'react';
+import Saudacao from './components/12.Saudacao';
+
+
+
+function App() {
+  const [nome, setNome] = useState()
+
+  const idade = 21
+  return (
+    <div className="App">
+      <ErrorExample/>
+      <Jxboladao/>
+      <FalaProps nome="Érica Monteiro"/>
+      <FalaProps idade={idade}/>
+      <FalaProps foto="https://poltronanerd.com.br/wp-content/uploads/2020/11/poltrona-baby-yoda.jpg" width="300"/>
+      <CssMaroto/>
+
+      <PropsDinamicos marca="Ferrari" ano={1999} modelo="090"/>
+      <PropsDinamicos ano={1999} modelo="090"/>
+
+      <Evento/>
+      <Form/>
+      <EventosProps/>
+      <Condicionais/>
+      <MeusItens/>
+
+      <StateLift setNome={setNome}/>
+      <Saudacao nome={nome}/>
+
+
+    </div>
+  );
+}
+
+export default App;
